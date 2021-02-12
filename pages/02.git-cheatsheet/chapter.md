@@ -8,13 +8,8 @@ intro:
     level: beginner
     updated: '2021-02-12'
     created: 'Theo Acker'
+subtitle: 'A simplified overview of git. '
 ---
-
-# Git Cheatsheet
-
-#git #instructions #cheatsheet
-
-A simplified overview of git. 
 
 ## Table of Contents
 
