@@ -13,21 +13,21 @@ subtitle: 'A simplified overview of git. '
 
 ## Table of Contents
 
-1. [Standard Workflow](Git%20Cheatsheet#standard-workflow)
-	1. [Branches](Git%20Cheatsheet#branches)
-	2. [Commits](Git%20Cheatsheet#commits)
-	3. [Merging Branches](Git%20Cheatsheet#merging-branches)
-2. [Command Reference](Git%20Cheatsheet#command-reference)
-	1. [Most Common Commands](Git%20Cheatsheet#most-common-commands)
-	2. [Branch Commands](Git%20Cheatsheet#branch-commands)
-	3. [Other Useful Commands](Git%20Cheatsheet#other-useful-commands)
-3. [Extra Topics](Git%20Cheatsheet#extra-topics)
-	1. [Setting Up](Git%20Cheatsheet#setting-up)
-	2. [Creating Repositories](Git%20Cheatsheet#creating-repositories)
-	3. [Regular Expressions](Git%20Cheatsheet#regular-expressions)
-	4. [Resources](Git%20Cheatsheet#resources)
-4. [Troubleshooting](Git%20Cheatsheet#troubleshooting)
-	1. [Resolving Conflicts](Git%20Cheatsheet#resolving-conflicts)
+1. [Standard Workflow](#standard-workflow)
+	1. [Branches](#branches)
+	2. [Commits](#commits)
+	3. [Merging Branches](#merging-branches)
+2. [Command Reference](#command-reference)
+	1. [Most Common Commands](#most-common-commands)
+	2. [Branch Commands](#branch-commands)
+	3. [Other Useful Commands](#other-useful-commands)
+3. [Extra Topics](#extra-topics)
+	1. [Setting Up](#setting-up)
+	2. [Creating Repositories](#creating-repositories)
+	3. [Regular Expressions](#regular-expressions)
+	4. [Resources](#resources)
+4. [Troubleshooting](#troubleshooting)
+	1. [Resolving Conflicts](#resolving-conflicts)
 
 ## Standard Workflow
 
@@ -76,8 +76,6 @@ When you are ready to add the changes from your branch (sample branch is named p
 	3. Delete the old branch: `git branch -d practice`
 5. Create a new branch to make more changes.
 
-[Table of Contents](Git%20Cheatsheet#table-of-contents)
-
 ## Command Reference
 
 ### Most Common Commands
@@ -115,8 +113,6 @@ When you are ready to add the changes from your branch (sample branch is named p
 `git init`: Initializes a new git repository in the current directory.
 
 `git clone <repository>`: Clones an existing git repository.
-
-[Table of Contents](Git%20Cheatsheet#table-of-contents)
 
 ## Extra Topics
 
@@ -185,8 +181,6 @@ Much of this information originally came from Software Carpentry's [git lesson](
 
 This is a short but useful [list of git commands](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html).
 
-[Table of Contents](Git%20Cheatsheet#table-of-contents)
-
 ## Troubleshooting
 
 If there is a branch (sample branch is named practice2) on GitHub that you would like to have on your local repository: `git branch practice2 origin/practice2`
@@ -200,5 +194,3 @@ Sometimes `git pull` may respond with an error because the remote contains work 
 If possible, open up the file with the conflict and look for `<<<<<<< HEAD`, some content, `=======`, conflicting content, and `>>>>>>>`. Remove the markers and manually reconcile the conflicts - that is, decide how you want the file to look. Then add, commit, and push.
 
 If this is not possible/does not work and you're not sure what to do, find someone to help you troubleshoot.
-
-[Table of Contents](Git%20Cheatsheet#table-of-contents)
