@@ -6,6 +6,8 @@ taxonomy:
 isIntro: true
 intro:
     level: beginner
+    updated: '2021-02-12'
+    created: 'Theo Acker'
 ---
 
 # Git Cheatsheet
