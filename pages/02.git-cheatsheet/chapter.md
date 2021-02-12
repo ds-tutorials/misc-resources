@@ -3,6 +3,7 @@ title: 'Git Cheatsheet'
 taxonomy:
     category:
         - docs
+isIntro: true
 intro:
     level: beginner
 ---
