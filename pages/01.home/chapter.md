@@ -4,7 +4,9 @@ taxonomy:
     category:
         - docs
 menu: Introduction
-subtitle: 'Instructions and Samples'
+subtitle: 'Tutorials and More'
+intro:
+    level: beginner
 ---
 
 These pages are subject to change.
