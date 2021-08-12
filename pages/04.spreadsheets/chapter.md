@@ -782,138 +782,6 @@ Our next example is a spreadsheet based on some actual survey data I worked with
         <td></td>
         <td>33</td>
       </tr>
-      <tr>
-        <td>11</td>
-        <td>2019</td>
-        <td>4</td>
-        <td>4</td>
-        <td>14521</td>
-        <td>3 poultry, 1 goat</td>
-        <td>4</td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>37</td>
-      </tr>
-      <tr>
-        <td>12</td>
-        <td>2019</td>
-        <td>4</td>
-        <td>4</td>
-        <td>14521</td>
-        <td>2 poultry, 1 cow, 1 goat</td>
-        <td>4</td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>43</td>
-      </tr>
-      <tr>
-        <td>13</td>
-        <td>2019</td>
-        <td>4</td>
-        <td>4</td>
-        <td>16354</td>
-        <td>1 cow, 1 ox</td>
-        <td>4</td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>40</td>
-      </tr>
-      <tr>
-        <td>14</td>
-        <td>2019</td>
-        <td>4</td>
-        <td>4</td>
-        <td>16354</td>
-        <td>3 poultry</td>
-        <td>7</td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>29</td>
-      </tr>
-      <tr>
-        <td>15</td>
-        <td>2019</td>
-        <td>4</td>
-        <td>7</td>
-        <td>16354</td>
-        <td>2 goats, 1 ox</td>
-        <td>7</td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>41</td>
-      </tr>
-      <tr>
-        <td>16</td>
-        <td>2019</td>
-        <td>4</td>
-        <td>7</td>
-        <td>16354</td>
-        <td>3 cows, 1 ox</td>
-        <td>16</td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>31</td>
-      </tr>
     </tbody>
 </table>
 
@@ -2120,240 +1988,6 @@ Then we make another sheet that connects each set of member information to a hou
         <td>secondary</td>
         <td>9</td>
       </tr>
-      <tr>
-        <td>6</td>
-        <td>1</td>
-        <td>30</td>
-        <td>male</td>
-        <td>married</td>
-        <td>primary</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>2</td>
-        <td>24</td>
-        <td>female</td>
-        <td>married</td>
-        <td>primary</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>3</td>
-        <td>1</td>
-        <td>female</td>
-        <td></td>
-        <td>none</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>4</td>
-        <td>1</td>
-        <td>male</td>
-        <td></td>
-        <td>none</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>5</td>
-        <td>59</td>
-        <td>male</td>
-        <td>married</td>
-        <td>primary</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>6</td>
-        <td>25</td>
-        <td>male</td>
-        <td>never</td>
-        <td>primary</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>1</td>
-        <td>57</td>
-        <td>male</td>
-        <td>widowed</td>
-        <td>secondary</td>
-        <td>13</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>2</td>
-        <td>26</td>
-        <td>female</td>
-        <td>never</td>
-        <td>secondary</td>
-        <td>14</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>3</td>
-        <td>24</td>
-        <td>female</td>
-        <td>never</td>
-        <td>higher</td>
-        <td>16</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>4</td>
-        <td>18</td>
-        <td>female</td>
-        <td>never</td>
-        <td>secondary</td>
-        <td>10</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>1</td>
-        <td>67</td>
-        <td>male</td>
-        <td>married</td>
-        <td>primary</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>2</td>
-        <td>63</td>
-        <td>female</td>
-        <td>married</td>
-        <td>primary</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>3</td>
-        <td>35</td>
-        <td>female</td>
-        <td>married</td>
-        <td>higher</td>
-        <td>18</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>4</td>
-        <td>38</td>
-        <td>male</td>
-        <td>married</td>
-        <td>higher</td>
-        <td>18</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>5</td>
-        <td>4</td>
-        <td>male</td>
-        <td></td>
-        <td>none</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>6</td>
-        <td>2</td>
-        <td>male</td>
-        <td></td>
-        <td>none</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>7</td>
-        <td>19</td>
-        <td>male</td>
-        <td>never</td>
-        <td>higher</td>
-        <td>14</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>8</td>
-        <td>15</td>
-        <td>female</td>
-        <td>never</td>
-        <td>secondary</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>9</td>
-        <td>30</td>
-        <td>female</td>
-        <td>married</td>
-        <td>higher</td>
-        <td>18</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>10</td>
-        <td>3</td>
-        <td>male</td>
-        <td></td>
-        <td>none</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>11</td>
-        <td>29</td>
-        <td>female</td>
-        <td>married</td>
-        <td>higher</td>
-        <td>18</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>12</td>
-        <td>3</td>
-        <td>female</td>
-        <td></td>
-        <td>none</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>1</td>
-        <td>65</td>
-        <td>female</td>
-        <td>widowed</td>
-        <td>primary</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>1</td>
-        <td>33</td>
-        <td>male</td>
-        <td>married</td>
-        <td>primary</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>2</td>
-        <td>24</td>
-        <td>female</td>
-        <td>married</td>
-        <td>secondary</td>
-        <td>14</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>3</td>
-        <td>2</td>
-        <td>male</td>
-        <td></td>
-        <td>none</td>
-        <td>0</td>
-      </tr>
     </tbody>
 </table>
 
@@ -2370,104 +2004,49 @@ Going back to the households data, when we looked at the option of creating colu
     <thead>
       <tr>
         <th>HHID</th>
-        <th>Year</th>
-        <th>Month</th>
-        <th>Day</th>
-        <th>RegionCode</th>
         <th>Livestock</th>
-        <th>Members</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>1</td>
-        <td>2019</td>
-        <td>3</td>
-        <td>25</td>
-        <td>15874</td>
         <td>1 poultry</td>
-        <td>4</td>
       </tr>
       <tr>
         <td>2</td>
-        <td>2019</td>
-        <td>3</td>
-        <td>25</td>
-        <td>15874</td>
         <td>2 cows, 1 ox</td>
-        <td>4</td>
       </tr>
       <tr>
         <td>3</td>
-        <td>2019</td>
-        <td>3</td>
-        <td>27</td>
-        <td>15874</td>
         <td>5 poultry, 2 cows, 2 goats, 1 ox</td>
-        <td>4</td>
       </tr>
       <tr>
         <td>4</td>
-        <td>2019</td>
-        <td>3</td>
-        <td>28</td>
-        <td>10553</td>
         <td>3 cows, 1 ox</td>
-        <td>5</td>
       </tr>
       <tr>
         <td>5</td>
-        <td>2019</td>
-        <td>3</td>
-        <td>30</td>
-        <td>10553</td>
         <td>1 goat</td>
-        <td>2</td>
       </tr>
       <tr>
         <td>6</td>
-        <td>2019</td>
-        <td>4</td>
-        <td>2</td>
-        <td>10553</td>
         <td>1 ox</td>
-        <td>6</td>
       </tr>
       <tr>
         <td>7</td>
-        <td>2019</td>
-        <td>4</td>
-        <td>2</td>
-        <td>10553</td>
         <td>1 goat, 1 ox</td>
-        <td>4</td>
       </tr>
       <tr>
         <td>8</td>
-        <td>2019</td>
-        <td>4</td>
-        <td>2</td>
-        <td>10553</td>
         <td>2 goats, 1 ox</td>
-        <td>12</td>
       </tr>
       <tr>
         <td>9</td>
-        <td>2019</td>
-        <td>4</td>
-        <td>3</td>
-        <td>10553</td>
         <td>2 oxen</td>
-        <td>1</td>
       </tr>
       <tr>
         <td>10</td>
-        <td>2019</td>
-        <td>4</td>
-        <td>3</td>
-        <td>14521</td>
         <td>1 cow, 2 goats</td>
-        <td>3</td>
       </tr>
     </tbody>
 </table>
@@ -2479,137 +2058,82 @@ The livestock column in the households table above is clearly breaking our rule 
     <thead>
       <tr>
         <th>HHID</th>
-        <th>Year</th>
-        <th>Month</th>
-        <th>Day</th>
-        <th>RegionCode</th>
         <th>Poultry</th>
         <th>Cows</th>
         <th>Goats</th>
         <th>Oxen</th>
-        <th>Members</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>1</td>
-        <td>2019</td>
-        <td>3</td>
-        <td>25</td>
-        <td>15874</td>
         <td>1</td>
         <td>0</td>
         <td>0</td>
         <td>0</td>
-        <td>4</td>
       </tr>
       <tr>
         <td>2</td>
-        <td>2019</td>
-        <td>3</td>
-        <td>25</td>
-        <td>15874</td>
         <td>0</td>
         <td>2</td>
         <td>0</td>
         <td>1</td>
-        <td>4</td>
       </tr>
       <tr>
         <td>3</td>
-        <td>2019</td>
-        <td>3</td>
-        <td>27</td>
-        <td>15874</td>
         <td>5</td>
         <td>2</td>
         <td>2</td>
         <td>1</td>
-        <td>4</td>
       </tr>
       <tr>
         <td>4</td>
-        <td>2019</td>
-        <td>3</td>
-        <td>28</td>
-        <td>10553</td>
         <td>0</td>
         <td>3</td>
         <td>0</td>
         <td>1</td>
-        <td>5</td>
       </tr>
       <tr>
         <td>5</td>
-        <td>2019</td>
-        <td>3</td>
-        <td>30</td>
-        <td>10553</td>
         <td>0</td>
         <td>0</td>
         <td>1</td>
         <td>0</td>
-        <td>2</td>
       </tr>
       <tr>
         <td>6</td>
-        <td>2019</td>
-        <td>4</td>
-        <td>2</td>
-        <td>10553</td>
         <td>0</td>
         <td>0</td>
         <td>0</td>
         <td>1</td>
-        <td>6</td>
       </tr>
       <tr>
         <td>7</td>
-        <td>2019</td>
-        <td>4</td>
-        <td>2</td>
-        <td>10553</td>
         <td>0</td>
         <td>0</td>
         <td>1</td>
         <td>1</td>
-        <td>4</td>
       </tr>
       <tr>
         <td>8</td>
-        <td>2019</td>
-        <td>4</td>
-        <td>2</td>
-        <td>10553</td>
         <td>0</td>
         <td>0</td>
         <td>2</td>
         <td>1</td>
-        <td>12</td>
       </tr>
       <tr>
         <td>9</td>
-        <td>2019</td>
-        <td>4</td>
-        <td>3</td>
-        <td>10553</td>
         <td>0</td>
         <td>0</td>
         <td>0</td>
         <td>2</td>
-        <td>1</td>
       </tr>
       <tr>
         <td>10</td>
-        <td>2019</td>
-        <td>4</td>
-        <td>3</td>
-        <td>14521</td>
         <td>0</td>
         <td>1</td>
         <td>2</td>
         <td>0</td>
-        <td>3</td>
       </tr>
     </tbody>
 </table>
