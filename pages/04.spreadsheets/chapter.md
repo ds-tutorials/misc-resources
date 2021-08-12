@@ -2240,6 +2240,293 @@ Some of the dates in the date column shown here could be ambiguous (especially o
 
 ### Null Values
 
+Sometimes you will have missing data. Maybe something wasn't collected, or wasn't applicable, or it had to be thrown out for some reason. There isn't normally any need to specify the reason - whether the interviewer forgot to ask the question, or the interviewee was unable to answer it or something else entirely, it doesn't make much (or any) difference. The data is still missing.
+
+TODO: explanation
+
+To use a more humanities-relevant example, consider the Skyrim Museum sample we looked at earlier.
+
+<table>
+    <caption>Skyrim Museum Sample</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Creator</th>
+      <th>Date</th>
+      <th>Original Format</th>
+      <th>Tags</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rahgot</td>
+      <td>Unknown dragons</td>
+      <td>Merethic Era</td>
+      <td>Game Object</td>
+      <td>armor,dragons,enchanted,Nordic</td>
+    </tr>
+    <tr>
+      <td>Golden Claw</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+      <td>Game Object</td>
+      <td>dragons,Nordic,puzzles</td>
+    </tr>
+    <tr>
+      <td>Mehrunes' Razor</td>
+      <td>Mehrunes Dagon</td>
+      <td>Unknown</td>
+      <td>Game Object</td>
+      <td>Daedric,dagger,enchanted,one-handed,weapon</td>
+    </tr>
+    <tr>
+      <td>Auriel's Bow</td>
+      <td>Anuiel</td>
+      <td>Dawn Era</td>
+      <td>Game Object</td>
+      <td>bow,enchanted,prophecy,two-handed,weapon</td>
+    </tr>
+    <tr>
+      <td>Wuuthrad</td>
+      <td>Yngol</td>
+      <td>Merethic Era</td>
+      <td>Game Object</td>
+      <td>axe,Nordic,two-handed,weapon</td>
+    </tr>
+  </tbody>
+</table>
+
+Some of these artifacts have no known date of creation or creator. It is relevant that the date and creator have been researched and are truly unknown. Thus, these have been included as data.
+
+As for how to deal with null values, I have included a slightly modified chart I found in one of the Data Carpentry lessons that discusses a number of possible values.
+
+TODO: Link to Carpentry lesson
+
+<table>
+    <caption>Dealing with Null Values</caption>
+    <thead>
+      <tr>
+        <th>Null Value</th>
+        <th>Problems</th>
+        <th>Recommendation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0</td>
+        <td>Indistinguishable from a true zero</td>
+        <td>Never use</td>
+      </tr>
+      <tr>
+        <td>Blank</td>
+        <td>Hard to distinguish values that are missing from those overlooked on entry. Hard to distinguish blanks from spaces, which behave differently.</td>
+        <td>Best option</td>
+      </tr>
+      <tr>
+        <td>-999 or 999</td>
+        <td>Not recognized as null by many programs without user input. Can be inadvertently entered into calculations.</td>
+        <td>Avoid</td>
+      </tr>
+      <tr>
+        <td>NA or na</td>
+        <td>Can also be an abbreviation (e.g. North America), can cause problems with data type (turn a numerical column into a text column). NA is more commonly recognized than na.</td>
+        <td>Good option</td>
+      </tr>
+      <tr>
+        <td>N/A</td>
+        <td>An alternate form of NA, but often not compatible with software</td>
+        <td>Avoid</td>
+      </tr>
+      <tr>
+        <td>NULL</td>
+        <td>Can cause problems with data type</td>
+        <td>Good Option</td>
+      </tr>
+      <tr>
+        <td>None</td>
+        <td>Uncommon. Can cause problems with data type</td>
+        <td>Avoid</td>
+      </tr>
+      <tr>
+        <td>No data</td>
+        <td>Uncommon. Can cause problems with data type, contains a space</td>
+        <td>Avoid</td>
+      </tr>
+      <tr>
+        <td>Missing</td>
+        <td>Uncommon. Can cause problems with data type</td>
+        <td>Avoid</td>
+      </tr>
+      <tr>
+        <td>- or + or .</td>
+        <td>Uncommon. Can cause problems with data type</td>
+        <td>Avoid</td>
+      </tr>
+    </tbody>
+</table>
+
+The first one is very important. Never use zero as a null value. Ever. Zero is data. For example, if I am recording the number of years of education a person has received, zero is a legitimate answer. If I also use zero to record any missing values, I am no longer indicating that those values are missing.
+
+I'll jump down one to another numeric option: -999 or 999. This is also not a good idea. It may not always be confusing the way zero can be - I am definitely not going to say that someone had -999 or 999 years of education, but it is not recognized as null by most software and may mess up any calculations or analysis you attempt.
+
+The second option here is the one you generally want to go with. For clarification, this option means leaving the cell entirely blank, rather than writing the word "Blank" in the cell. This is a safe option, as empty cells will be avoided in analysis and are widely recognized as null by software you might use. It also makes sense. The value is missing, so nothing is recorded.
+
+If there is some reason that you can't leave a cell blank, for example, if you are using software that doesn't recognize blanks as nulls, NA or NULL (all caps for both) are the other decent options. However, leaving the cell blank is normally best.
+
 ## Consistency
+
+Dates and nulls are some of the trickiest values you are likely to regularly encounter, but all values can become tricky without consistency. When you are organizing data, it can be useful to define exactly what information will be accepted in each column. For certain types of text data, you may want to create a standardized vocabulary.
+
+A standardized vocabulary is a pre-defined list of words or phrases that are acceptable inputs for a given column. If you have heard the term "controlled vocabulary" before, this is a very similar concept.
+
+Let's consider an example. I want to know the mythological creature preferences of Texans and Oklahomans. I have people fill out a survey, indicating their state, and their favorite mythological creature. A sample of the results is shown above. After collecting the results, I analyze them to find a favorite creature for Texas and for Oklahoma. I find that Texans prefer unicorns, while Oklahomans prefer dragons. Here is a section of the dataset.
+
+<table>
+    <caption>Mythical Creature Survey</caption>
+    <thead>
+      <tr>
+        <th>State</th>
+        <th>FavoriteCreature</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Oklahoma</td>
+        <td>dragon</td>
+      </tr>
+      <tr>
+        <td>OK</td>
+        <td>unicorn</td>
+      </tr>
+      <tr>
+        <td>TX</td>
+        <td>dragon</td>
+      </tr>
+      <tr>
+        <td>Texas</td>
+        <td>unicorn</td>
+      </tr>
+      <tr>
+        <td>OK</td>
+        <td>dragon</td>
+      </tr>
+      <tr>
+        <td>OK</td>
+        <td>dragon</td>
+      </tr>
+      <tr>
+        <td>Oklahoma</td>
+        <td>dragon</td>
+      </tr>
+      <tr>
+        <td>Texas</td>
+        <td>unicorn</td>
+      </tr>
+      <tr>
+        <td>Texas</td>
+        <td>dragon</td>
+      </tr>
+      <tr>
+        <td>OK</td>
+        <td>unicorn</td>
+      </tr>
+      <tr>
+        <td>Oklahoma</td>
+        <td>dragon</td>
+      </tr>
+      <tr>
+        <td>Texas</td>
+        <td>dragon</td>
+      </tr>
+      <tr>
+        <td>Oklahoma</td>
+        <td>dragon</td>
+      </tr>
+      <tr>
+        <td>OK</td>
+        <td>unicorn</td>
+      </tr>
+    </tbody>
+</table>
+
+The results for the full survey are as follows:
+
+<table>
+    <caption>Myth Survey Results</caption>
+    <thead>
+      <tr>
+        <th>State</th>
+        <th>Dragon</th>
+        <th>Unicorn</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Oklahoma</td>
+        <td>7</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Texas</td>
+        <td>4</td>
+        <td>6</td>
+      </tr>
+    </tbody>
+</table>
+
+Unfortunately, there is a problem with this dataset. I forgot to standardize my states. In the state column, sometimes the state is spelled out, and sometimes the state code is used. My analysis, however, assumed that the states would be spelled out, so I missed all the results for OK and TX. Let’s see how that changes my conclusions.
+
+<table>
+    <caption>Myth Survey - Full Results</caption>
+    <thead>
+      <tr>
+        <th>State</th>
+        <th>Dragon</th>
+        <th>Unicorn</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Oklahoma</td>
+        <td>7</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Texas</td>
+        <td>4</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>OK</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>TX</td>
+        <td>4</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Oklahoma + OK</td>
+        <td>11 (7 + 4)</td>
+        <td>9 (4 + 5)</td>
+      </tr>
+      <tr>
+        <td>Texas + TX</td>
+        <td>8 (4 + 4)</td>
+        <td>7 (6 + 1)</td>
+      </tr>
+    </tbody>
+</table>
+
+For the spelled out states, more Oklahomans prefer dragons, and more Texans prefer unicorns. For the state codes, the reverse is true. If I combine all Oklahoman responses and all Texan responses, I find that a preference for dragons knows no state boundaries.
+
+This is a silly example, but hopefully it illustrates the perils of not standardizing what values a given column will accept. 
+
+It is useful to define the values to be used for a given column somewhere in your notes included with the data, but you can go a step further. Both Excel and Google Sheets (and presumably other spreadsheet programs) provide ways to set these values, which can help prevent mistakes and typos. This feature is called data validation.
+
+### Data Validation
+
+TODO: Purpose and how-to
 
 ## Final Tips
