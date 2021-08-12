@@ -18,7 +18,7 @@ Spreadsheets are a wonderful tool for gathering, viewing, sharing, and working w
 !!!! - Avoid common pitfalls when creating tables or spreadsheets.
 !!!! - Handle tricky information, like dates and null or unknown values.
 
-## Basic Spreadsheet Structure
+## Spreadsheet Structure
 
 We will look at several sample spreadsheets to see how we can organize different types of information. Before we look at anything too complex, however, we need to define the basic "data structure" of a spreadsheet.
 
@@ -2620,4 +2620,102 @@ Now we have columns for each type of livestock, with each cell containing the nu
 !
 ! This example illustrates one reason to never have more than one value per cell. When we have four columns, it is very sensible to record the zeros. It would feel kind of odd to specifically add "0 poultry" to the single column we had before.
 
+## Tricky Values: Dates and Nulls
 
+### Dates
+
+One reason dates can be tricky is that they can be represented in a varietry of ways. A few examples:
+
+- March 12
+- March 12, 2007
+- 03/12/07
+- 2007-03-12
+
+When working with dates, we must therefore be as specific, clear, and consistent as possible.
+
+Spreadsheet software, like Excel, can further complicate matters. Excel is very opinionated in how it deals with dates.
+
+- Excel removes leading zeros from day and month. This isn't a big deal, though I find it makes the dates a bit harder to read. Example: 01/04/2021 becomes 1/4/2021
+- Excel may show the date in a different format, visually, depending on its settings. No data is lost, but it may look confusing. Example: 01/04/2021 becomes 1/4/2021 but is displayed as 1/4/21, Jan-21, or in some other format
+- Excel automatically adds the current year to input it perceives as a date without a year. Obviously if the date did not occur in the same year it was entered into Excel, this would be a problem. Example: 01/04 becomes 1/4/2021 (in the year 2021)
+- Excel automatically adds a day to input it perceives as a date without a day. By default, the day chosen is the first. Example: 01/2021 becomes 1/1/2021
+
+While the first two may be minor annoyances or may not even bother you at all, the last two are highly problematic. If your input is not a date, but just resembles one, the solution (in Excel, at least) is to put a single quotation mark in front of the date, or to specifically change the Number Format for the cell(s) to Text. The latter is generally a better option since you don't enter extra data, but make sure to change the Number Format _**before**_ you enter data. For example, if I enter 01/04/2021 and then change Number Format to text, the cell value becomes 44200.
+
+If your input is a date, the safest option is to have three separate columns, one each for year, month, and day. Whether or not you store the full date in another column, this is an excellent approach that eliminates ambiguity, and that makes it easier to analyze. After all, a date could be considered its own entity, or it could be considered three values, and we don't want to store multiple values per cell. When possible, I recommend having a date column and separate columns, since some analysis software can work directly with dates, but you don't want to have to rely on the date column.
+
+<table>
+    <caption>Dates</caption>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Year</th>
+        <th>Month</th>
+        <th>Day</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>8/7/19</td>
+        <td>2019</td>
+        <td>8</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>8/12/19</td>
+        <td>2019</td>
+        <td>8</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>11/2/19</td>
+        <td>2019</td>
+        <td>11</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>1/1/20</td>
+        <td>2020</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>1/14/20</td>
+        <td>2020</td>
+        <td>1</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>2/5/20</td>
+        <td>2020</td>
+        <td>2</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>4/3/20</td>
+        <td>2020</td>
+        <td>4</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4/10/20</td>
+        <td>2020</td>
+        <td>4</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>4/25/20</td>
+        <td>2020</td>
+        <td>4</td>
+        <td>25</td>
+      </tr>
+    </tbody>
+</table>
+
+Some of the dates in the date column shown here could be ambiguous (especially out of context), but since there are also columns for the year, month, and day, that is not a problem. Providing three columns becomes especially important if you are working with dates that you only know part of. If you just know the month and the year, you cannot store it in a date column that uses a format with the day, because you do not know the day. If you are using three separate columns, you can add the year and month to the appropriate columns and treat the day as a null value.
+
+### Null Values
+
+## Consistency
+
+## Final Tips
