@@ -2528,6 +2528,36 @@ It is useful to define the values to be used for a given column somewhere in you
 
 ### Data Validation
 
-TODO: Purpose and how-to
+Data validation is an extremely useful feature. You can use it to specify a set of accepted text values, as mentioned above, but it can do a lot more, too. For example, you could use data validation to ensure that all entries are positive numbers less than 100. Since the focus of this tutorial is not how to use features in specific spreadsheet programs, I will not go into the details here, but I have included links with more infomration below.
+
+Microsoft support has information on using [data validation in Excel](https://support.microsoft.com/en-us/office/apply-data-validation-to-cells-29fecbcc-d1b9-42c1-9d76-eff3ce5f7249#ID0EAADAAA=Windows) for Windows, Mac, or Web.
+
+Data validation in Google Sheets will be reasonably similar. The linked instructions are for [creating an in-cell dropdown with data validation](https://www.groovypost.com/howto/add-google-docs-in-cell-dropdown-validation-spreadsheets-review/). For other types of data validation, follow steps 1 and 2, but choose a different option instead of "List from a range."
+
+This is a great tool, and I recommend playing around with it on your preferred spreadsheet editor.
 
 ## Final Tips
+
+Finally, here are a few miscellaneous tips that may make your life easier.
+
+1. Keep a separate copy of your raw data. If you need to make modifications or apply fancy formatting, do so using a copy. This ensures you will always have a clean source file to work with, not to mention that you will have a backup in case something goes wrong.
+2. Store data as CSVs. This isn't essential, but if you are keeping a separate copy of your raw data, a CSV format is a good way to store it. It is an especially good format for sharing data.
+!! CSV stands for comma separated values. While your computer will automatically try to open a CSV file using spreadsheet software, which is very convenient for viewing it, ultimately a CSV file is a text file. Please note: If you have multiple sheets in a spreadsheet workbook, you will need to store each one as a separate CSV file.
+3. In general, be wary of what formatting you apply. While some formatting can be very useful, such as changing font size to make the text easier to read, there are two things to keep in mind.
+	1. CSVs do not store formatting, so make sure you are not using formatting to convey information.
+	2. Avoid destructive formatting, like merging cells. This kind of formatting can cause problems saving and working with the spreadsheet in the future.
+4. When naming files, columns within a spreadsheet, or anything else, consider using a naming convention system. There isn't one right way to do this - the primary goal is clarity and consistency. If you don't have one, I recommend considering this [naming convention system](https://www2.staffingindustry.com/Editorial/Archived-Blog-Posts/Adam-Pode-s-Blog/Probably-the-best-file-naming-convention-ever).
+5. Freeze the top row of your spreadsheet so you don't have to scroll up and down between the column headers and the rest of the data.
+	1. [Freeze rows in Excel](https://support.microsoft.com/en-us/office/freeze-panes-to-lock-rows-and-columns-dab2ffc9-020d-4026-8121-67dd25f2508f)
+	2. [Freeze rows in Google Sheets](https://spreadsheetpoint.com/how-to-freeze-rows-in-google-sheets/)
+6. When possible, learn the keyboard shortcuts for operations you tend to use a lot. There are a *ton* of shortcuts (I've provided links to lists for Excel and Google Sheets), so it isn't practical to learn all of them, but learning the ones you will make the most use of can save you time and energy. I have definitely made good use out of keyboard shortcuts for selecting an entire row or column, deleting a row or column, and switching between spreadsheet tabs.
+	1. [Keyboard shortcuts in Excel](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f)
+	2. [Keyboard shortcuts in Google Sheets](https://support.google.com/docs/answer/181110?co=GENIE.Platform%3DDesktop&hl=en)
+
+You can find all of the curriculum materials for this tutorial (and associated workshop) on the [Spreadsheets for Humanities OSF page](https://osf.io/n72ce/).
+
+If you are interested in learning more about organizing and working with data, here are a few recommendations:
+- This tutorial relies heavily on content from the Data Carpentries lesson [Data Organization in Spreadsheets for Social Scientists](https://datacarpentry.org/spreadsheets-socialsci/), which is an excellent resource.
+- Data Carpentries also has good lessons for learning to use OpenRefine, a very useful data cleaning tool. You can try [Data Cleaning with OpenRefine for Social Scientists](https://datacarpentry.org/openrefine-socialsci/) or [Data Cleaning with OpenRefine for Ecologists](https://datacarpentry.org/OpenRefine-ecology-lesson/).
+- OU Libraries periodically offers Data Carpentries and Software Carpentries workshops, so be sure to check our calendar regularly. If you are not affiliated with OU, check with your local university. They may offer Carpentries workshops or be interested in offering them.
+- Heather Froehlich has put together [A Gentle Introduction to Excel and Spreadsheets for Humanities People](https://hfroehli.ch/2021/06/17/a-gentle-introduction-to-excel-and-spreadsheets-for-humanities-people/). If you use Google Sheets or some other program, the exact instructions may be slightly different, but the information should still be useful.
