@@ -6,7 +6,7 @@ taxonomy:
 subtitle: 'for the Humanities'
 intro:
     level: beginner
-media_order: 'BookSample_cell.png,omeka.png'
+media_order: omeka.png
 ---
 
 Spreadsheets are a wonderful tool for gathering, viewing, sharing, and working with information. As with any tool, learning to use them effectively can make a big difference. In this tutorial we will discuss the structure of an effective spreadsheet, how to deal with certain tricky values you may work with, and some other tips and features for working with spreadsheets.
