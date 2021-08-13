@@ -94,12 +94,9 @@ Each intersection of a row and column is a cell. A cell contains the value of th
 
 The standard rule here is that there should only ever be one value per cell. While this sample conforms to the rule, there is a potential problem area in the author column. You are probably familiar with lots of books and articles that have more than one author. If I want to add a book with multiple authors to this spreadsheet, I have to choose between ignoring all authors other than the first, having multiple authors (values) in a single cell, or restructuring the sheet. As we will see, the last option is typically the best choice, although it will likely take more work. That is why it is important to plan out what information you have and how you will organize it early!
 
-! ### Key Points
-!
-! - One value per cell
-! - One item per row
+### Artifacts with Tags
 
-Another fairly common attribute that shares the same difficulty as author is the tag attribute. Tweets, photographs, artifacts... all kinds of things can have any number of tags. In the next example, we will take a look at how we can address this kind of issue when it comes up.
+Another fairly common attribute that shares the same difficulty as author is the tag attribute. Tweets, photographs, artifacts... all kinds of things can have any number of tags.
 
 The Skyrim Museum Sample is a shortened and simplified version of some information that could be uploaded to the content management system Omeka. Omeka allows you to build a basic website with a searchable database containing images or other objects and their metadata (the information about those objects). It is commonly used for archives, and it works well for a variety of digital projects.
 
@@ -530,6 +527,8 @@ We can then deal with the Tags column in a second spreadsheet. Here, each row pa
 </table>
 
 The two spreadsheet connect by using the artifact name. In the fifth row of the Tags table, we pair the Golden Claw with the dragons tag. Then we pair it with Nordic, and then with puzzles. Because the "Name" variable is unique to each of our objects - for example, we only have one object with the name Golden Claw - we can use this to clearly identify which object a given tag belongs to. There is no question that the three tags just mentioned (dragons, Nordic, puzzles) all belong to the object called Golden Claw.
+
+Working with multiple related sheets can take some getting used to, but it opens up a world of possibility. We can count how many times any tag shows up in this column. We could load this data into a visualization program like Tableau and make a bar chart to see which tags are the most or least common. The list goes on.
 
 ### Survey Data
 
@@ -2146,6 +2145,8 @@ Now we have columns for each type of livestock, with each cell containing the nu
 
 ## Tricky Values: Dates and Nulls
 
+We have now looked at three different datasets to examine the basic structure we want to give our information when organizing it in spreadsheets. There are, however, other issues that may come up when creating or working with spreadsheets. We will visit a few of the most important ones, starting with a brief discussion of how to deal with two types of tricky values: Dates and nulls.
+
 ### Dates
 
 One reason dates can be tricky is that they can be represented in a varietry of ways. A few examples:
@@ -2242,9 +2243,11 @@ Some of the dates in the date column shown here could be ambiguous (especially o
 
 Sometimes you will have missing data. Maybe something wasn't collected, or wasn't applicable, or it had to be thrown out for some reason. There isn't normally any need to specify the reason - whether the interviewer forgot to ask the question, or the interviewee was unable to answer it or something else entirely, it doesn't make much (or any) difference. The data is still missing.
 
-TODO: explanation
+What is the difference between zero, unknown, and null?
 
-To use a more humanities-relevant example, consider the Skyrim Museum sample we looked at earlier.
+Zero is a known quantity. It is just as valid information as any other number.
+
+Unknown and null are a bit more similar. In many cases they will amount to the same thing. Occasionally, however, you may find a situation where the fact that a value is unknown is meaningful. For example, consider the Skyrim Museum sample we looked at earlier.
 
 <table>
     <caption>Skyrim Museum Sample</caption>
@@ -2296,11 +2299,9 @@ To use a more humanities-relevant example, consider the Skyrim Museum sample we 
   </tbody>
 </table>
 
-Some of these artifacts have no known date of creation or creator. It is relevant that the date and creator have been researched and are truly unknown. Thus, these have been included as data.
+Some of these artifacts have no known date of creation or creator. It is relevant that the date and creator have been researched and are truly unknown. Thus, these have been included as data. If, instead, I had not yet managed to research all of the dates or creators, the missing values would be recorded as nulls. They might also be unknown, or they might have a value that I simply had not recorded.
 
-As for how to deal with null values, I have included a slightly modified chart I found in one of the Data Carpentry lessons that discusses a number of possible values.
-
-TODO: Link to Carpentry lesson
+As for how to deal with null values, I have included a slightly modified chart I found in one of the Data Carpentry lessons ([Data Organization in Spreadsheets for Social Scientists: Formatting Problems](https://datacarpentry.org/spreadsheets-socialsci/02-common-mistakes/index.html)) that discusses a number of possible values.
 
 <table>
     <caption>Dealing with Null Values</caption>
@@ -2474,7 +2475,7 @@ The results for the full survey are as follows:
     </tbody>
 </table>
 
-Unfortunately, there is a problem with this dataset. I forgot to standardize my states. In the state column, sometimes the state is spelled out, and sometimes the state code is used. My analysis, however, assumed that the states would be spelled out, so I missed all the results for OK and TX. Let’s see how that changes my conclusions.
+Unfortunately, there is a problem with this dataset: I forgot to standardize my states. In the state column, sometimes the state is spelled out, and sometimes the state code is used. My analysis, however, assumed that the states would be spelled out, so I missed all the results for OK and TX. Let’s see how that changes my conclusions.
 
 <table>
     <caption>Myth Survey - Full Results</caption>
