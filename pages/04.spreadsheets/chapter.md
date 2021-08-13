@@ -2380,7 +2380,7 @@ Dates and nulls are some of the trickiest values you are likely to regularly enc
 
 A standardized vocabulary is a pre-defined list of words or phrases that are acceptable inputs for a given column. If you have heard the term "controlled vocabulary" before, this is a very similar concept.
 
-Let's consider an example. I want to know the mythological creature preferences of Texans and Oklahomans. I have people fill out a survey, indicating their state, and their favorite mythological creature. A sample of the results is shown above. After collecting the results, I analyze them to find a favorite creature for Texas and for Oklahoma. I find that Texans prefer unicorns, while Oklahomans prefer dragons. Here is a section of the dataset.
+Let's consider an example. I want to know the mythological creature preferences of Texans and Oklahomans. I have people fill out a survey, indicating their state, and their favorite mythological creature. A sample of the results is shown above. After collecting the results, I analyze them to find a favorite creature for Texas and for Oklahoma. I find that Texans prefer unicorns, while Oklahomans prefer dragons. Here is a section of the dataset (the full dataset can be found on the [OSF page](https://osf.io/n72ce/)).
 
 <table>
     <caption>Mythical Creature Survey</caption>
