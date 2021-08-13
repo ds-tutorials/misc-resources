@@ -9,7 +9,7 @@ intro:
     level: beginner
     updated: '2021-08-13'
     created: 'Theo Acker'
-media_order: 'omeka.png,BookSample_cell.png'
+media_order: 'omeka.png,BookSample_cell.png,number_format.png'
 ---
 
 Spreadsheets are a wonderful tool for gathering, viewing, sharing, and working with information. As with any tool, learning to use them effectively can make a big difference. In this tutorial we will discuss the structure of an effective spreadsheet, how to deal with certain tricky values you may work with, and some other tips and features for working with spreadsheets.
@@ -2168,7 +2168,9 @@ Spreadsheet software, like Excel, can further complicate matters. Excel is very 
 - Excel automatically adds the current year to input it perceives as a date without a year. Obviously if the date did not occur in the same year it was entered into Excel, this would be a problem. Example: 01/04 becomes 1/4/2021 (in the year 2021)
 - Excel automatically adds a day to input it perceives as a date without a day. By default, the day chosen is the first. Example: 01/2021 becomes 1/1/2021
 
-While the first two may be minor annoyances or may not even bother you at all, the last two are highly problematic. If your input is not a date, but just resembles one, the solution (in Excel, at least) is to put a single quotation mark in front of the date, or to specifically change the Number Format for the cell(s) to Text. The latter is generally a better option since you don't enter extra data, but make sure to change the Number Format _**before**_ you enter data. For example, if I enter 01/04/2021 and then change Number Format to text, the cell value becomes 44200.
+While the first two may be minor annoyances or may not even bother you at all, the last two are highly problematic. If your input is not a date, but just resembles one, the solution (in Excel, at least) is to put a single quotation mark in front of the date, or to specifically change the Number Format for the cell(s) to Text. The latter is generally a better option since you don't enter extra data, but make sure to change the Number Format _**before**_ you enter data. For example, if I enter 08/07/2019 and then change Number Format to text, the cell value becomes 43684.
+
+![Number Format dropdown in Excel. Text is highlighted.](number_format.png)
 
 If your input is a date, the safest option is to have three separate columns, one each for year, month, and day. Whether or not you store the full date in another column, this is an excellent approach that eliminates ambiguity, and that makes it easier to analyze. After all, a date could be considered its own entity, or it could be considered three values, and we don't want to store multiple values per cell. When possible, I recommend having a date column and separate columns, since some analysis software can work directly with dates, but you don't want to have to rely on the date column.
 
