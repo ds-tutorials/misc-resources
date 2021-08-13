@@ -6,6 +6,8 @@ taxonomy:
 subtitle: 'for the Humanities'
 intro:
     level: beginner
+    updated: '2021-08-13'
+    created: 'Theo Acker'
 media_order: 'omeka.png,BookSample_cell.png'
 ---
 
