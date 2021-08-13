@@ -1,5 +1,6 @@
 ---
 title: 'Organizing Information in Spreadsheets'
+isIntro: true
 taxonomy:
     category:
         - docs
