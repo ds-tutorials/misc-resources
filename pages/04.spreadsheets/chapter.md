@@ -2542,7 +2542,7 @@ Finally, here are a few miscellaneous tips that may make your life easier.
 
 1. Keep a separate copy of your raw data. If you need to make modifications or apply fancy formatting, do so using a copy. This ensures you will always have a clean source file to work with, not to mention that you will have a backup in case something goes wrong.
 2. Store data as CSVs. This isn't essential, but if you are keeping a separate copy of your raw data, a CSV format is a good way to store it. It is an especially good format for sharing data.
-!! CSV stands for comma separated values. While your computer will automatically try to open a CSV file using spreadsheet software, which is very convenient for viewing it, ultimately a CSV file is a text file. Please note: If you have multiple sheets in a spreadsheet workbook, you will need to store each one as a separate CSV file.
+! CSV stands for comma separated values. While your computer will automatically try to open a CSV file using spreadsheet software, which is very convenient for viewing it, ultimately a CSV file is a text file. Please note: If you have multiple sheets in a spreadsheet workbook, you will need to store each one as a separate CSV file.
 3. In general, be wary of what formatting you apply. While some formatting can be very useful, such as changing font size to make the text easier to read, there are two things to keep in mind.
 	1. CSVs do not store formatting, so make sure you are not using formatting to convey information.
 	2. Avoid destructive formatting, like merging cells. This kind of formatting can cause problems saving and working with the spreadsheet in the future.
